@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Montserra/Montserrat.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$color-1: #FF6060;
+$color-2: #F6F6F6;
+$color-3: #FFFFFF;
+$color-4: #000000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: $font-1;
+    width: 100%;
+    min-width: 320px;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: $color-4;
+    cursor: pointer;
+}
