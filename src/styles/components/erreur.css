@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Montserra/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.erreur-content {
+  margin: 113px 0 113px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.erreur-content .error-title {
+  font-size: 96px;
+  font-weight: 700;
+  color: #FF6060;
+  margin-bottom: 113px;
+}
+.erreur-content .error-subtitle {
+  color: #FF6060;
+  margin: 0 57.5px 113px 57.5px;
+  text-align: center;
+  font-size: 18px;
+}
+.erreur-content .error-text {
+  text-decoration: underline;
+  font-size: 14px;
+}/*# sourceMappingURL=erreur.css.map */
