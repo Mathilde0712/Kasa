@@ -1,0 +1,30 @@
+@import "../pages/settings";
+
+
+.collapse {
+    padding: 0 28px 0 20px;
+    width: 100%;
+
+    .collapse-content {
+        font-size: 13px;
+        padding: 19px 28px 20px 20px;
+    }
+
+    .collapse-title {
+        padding: 19px 28px 20px 20px;
+        background: $color-1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 0px 10px;
+
+
+        .subtitle {
+            color: $color-3;
+
+
+        }
+    }
+}

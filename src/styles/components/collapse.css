@@ -21,29 +21,24 @@ a {
   cursor: pointer;
 }
 
-.banner {
+.collapse {
+  padding: 0 28px 0 20px;
+  width: 100%;
+}
+.collapse .collapse-content {
+  font-size: 13px;
+  padding: 19px 28px 20px 20px;
+}
+.collapse .collapse-title {
+  padding: 19px 28px 20px 20px;
+  background: #FF6060;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 22px;
-}
-
-.title {
-  position: absolute;
-  z-index: 1;
-  width: 335px;
+  font-size: 13px;
   font-weight: 700;
-  font-size: 24px;
-  color: #FFFFFF;
-  padding: 31px 94px 32px 16px;
+  padding: 0px 10px;
 }
-
-.imgTitle {
-  position: relative;
-  width: 335px;
-  height: 111px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  filter: brightness(60%);
-}/*# sourceMappingURL=banner.css.map */
+.collapse .collapse-title .subtitle {
+  color: #FFFFFF;
+}/*# sourceMappingURL=collapse.css.map */

@@ -72,13 +72,14 @@ a {
   margin-bottom: 22px;
 }
 
-h1 {
+.title {
   position: absolute;
   z-index: 1;
+  width: 335px;
   font-weight: 700;
   font-size: 24px;
   color: #FFFFFF;
-  margin: 31px 94px 32px 16px;
+  padding: 31px 94px 32px 16px;
 }
 
 .imgTitle {
@@ -89,46 +90,6 @@ h1 {
      object-fit: cover;
   border-radius: 10px;
   filter: brightness(60%);
-}
-
-@font-face {
-  font-family: "font-1";
-  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "font-1", sans-serif;
-  width: 100%;
-  min-width: 320px;
-  background-color: #FFFFFF;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-  cursor: pointer;
-}
-
-.about-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 22px;
-}
-
-.imgTitle {
-  position: relative;
-  width: 335px;
-  height: 111px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  filter: brightness(30%);
 }
 
 .footer {
@@ -227,6 +188,7 @@ a {
   overflow: hidden;
   width: 335px;
   height: 225px;
+  cursor: pointer;
 }
 .card-content img {
   position: absolute;
@@ -239,11 +201,15 @@ a {
   height: 52px;
   color: #FFFFFF;
   position: relative;
-  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
   top: 70%;
   z-index: 5;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 142.6%;
+}
+
+.collapse-title {
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=index.css.map */
