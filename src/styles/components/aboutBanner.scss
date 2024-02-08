@@ -1,20 +1,12 @@
 @import "../pages/settings";
 
-.banner {
+.about-banner {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 22px;
 }
 
-.title {
-    position: absolute;
-    z-index: 1;
-    font-weight: 700;
-    font-size: 24px;
-    color: $color-3;
-    margin: 31px 94px 32px 16px;
-}
 
 .imgTitle {
     position: relative;
@@ -22,5 +14,5 @@
     height: 111px;
     object-fit: cover;
     border-radius: 10px;
-    filter: brightness(60%);
+
 }

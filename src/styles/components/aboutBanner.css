@@ -21,20 +21,11 @@ a {
   cursor: pointer;
 }
 
-.banner {
+.about-banner {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 22px;
-}
-
-h1 {
-  position: absolute;
-  z-index: 1;
-  font-weight: 700;
-  font-size: 24px;
-  color: #FFFFFF;
-  margin: 31px 94px 32px 16px;
 }
 
 .imgTitle {
@@ -44,5 +35,4 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  filter: brightness(60%);
-}/*# sourceMappingURL=banner.css.map */
+}/*# sourceMappingURL=aboutBanner.css.map */

@@ -1,0 +1,40 @@
+@import "../pages/settings";
+
+.card-content {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+    article {
+        overflow: hidden;
+        width: 335px;
+        height: 225px;
+        cursor: pointer;
+    }
+
+    img {
+        position: absolute;
+        width: 335px;
+        height: 225px;
+        border-radius: 10px;
+        background: $color-1;
+    }
+
+    p {
+        height: 52px;
+        color: $color-3;
+        position: relative;
+        margin: 0 20px 0 20px;
+        top: 70%;
+        z-index: 5;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 142.6%;
+
+
+    }
+}

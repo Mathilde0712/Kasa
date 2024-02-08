@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.card-content {
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.card-content article {
+  overflow: hidden;
+  width: 335px;
+  height: 225px;
+  cursor: pointer;
+}
+.card-content img {
+  position: absolute;
+  width: 335px;
+  height: 225px;
+  border-radius: 10px;
+  background: #FF6060;
+}
+.card-content p {
+  height: 52px;
+  color: #FFFFFF;
+  position: relative;
+  margin: 0 20px 0 20px;
+  top: 70%;
+  z-index: 5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
+}/*# sourceMappingURL=card.css.map */

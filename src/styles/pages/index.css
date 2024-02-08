@@ -1,6 +1,6 @@
 @font-face {
   font-family: "font-1";
-  src: url(../assets/fonts/Montserra/Montserrat.ttf);
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
 }
 * {
   margin: 0;
@@ -44,7 +44,7 @@ ul {
 
 @font-face {
   font-family: "font-1";
-  src: url(../assets/fonts/Montserra/Montserrat.ttf);
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
 }
 * {
   margin: 0;
@@ -91,6 +91,46 @@ h1 {
   filter: brightness(60%);
 }
 
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.about-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.imgTitle {
+  position: relative;
+  width: 335px;
+  height: 111px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(30%);
+}
+
 .footer {
   background-color: black;
   width: 100%;
@@ -104,4 +144,106 @@ h1 {
   color: white;
   font-size: 12px;
   text-align: center;
+}
+
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.erreur-content {
+  margin: 113px 0 113px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.erreur-content .error-title {
+  font-size: 96px;
+  font-weight: 700;
+  color: #FF6060;
+  margin-bottom: 113px;
+}
+.erreur-content .error-subtitle {
+  color: #FF6060;
+  margin: 0 57.5px 113px 57.5px;
+  text-align: center;
+  font-size: 18px;
+}
+.erreur-content .error-text {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.card-content {
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.card-content article {
+  overflow: hidden;
+  width: 335px;
+  height: 225px;
+}
+.card-content img {
+  position: absolute;
+  width: 335px;
+  height: 225px;
+  border-radius: 10px;
+  background: #FF6060;
+}
+.card-content p {
+  height: 52px;
+  color: #FFFFFF;
+  position: relative;
+  margin: 0 20px 0 20px;
+  top: 70%;
+  z-index: 5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
 }/*# sourceMappingURL=index.css.map */
