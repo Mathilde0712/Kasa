@@ -12,7 +12,7 @@ const Footer = () => {
         <img src={sLetter} />
         <img src={aLetter} />
       </div>
-      <p>©2020 Kasa. All <br/> rights reserved</p>
+      <p>©2020 Kasa. All rights reserved</p>
     </div>
   );
 };

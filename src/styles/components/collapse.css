@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -21,13 +22,21 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
 .collapse {
   padding: 0 28px 0 20px;
   width: 100%;
 }
 .collapse .collapse-content {
   font-size: 13px;
-  padding: 19px 28px 20px 20px;
+  padding: 13px 28px 20px 20px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
 }
 .collapse .collapse-title {
   padding: 19px 28px 20px 20px;
@@ -38,7 +47,21 @@ a {
   font-size: 13px;
   font-weight: 700;
   padding: 0px 10px;
+  margin-top: 20px;
 }
 .collapse .collapse-title .subtitle {
   color: #FFFFFF;
+}
+.collapse .collapse-title .rotate {
+  transition: transform 0.3s ease;
+}
+.collapse .collapse-title .rotateUp {
+  transform: rotate(180deg);
+}
+.collapse .collapse-title .rotateDown {
+  transform: rotate(0);
+}
+.collapse .collapse-about {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=collapse.css.map */

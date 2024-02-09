@@ -13,6 +13,8 @@ $color-4: #000000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
+
 }
 
 body {
@@ -20,10 +22,21 @@ body {
     width: 100%;
     min-width: 320px;
     background-color: #FFFFFF;
+
 }
 
 a {
     text-decoration: none;
     color: $color-4;
     cursor: pointer;
+}
+
+@media (min-width : 1025px) {
+    body {
+        min-width: 1025px;
+        margin: 0;
+        padding: 0;
+    }
+
+
 }

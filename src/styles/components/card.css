@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -21,6 +22,13 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
 .card-content {
   margin: 20px 0 20px 0;
   display: flex;
@@ -40,6 +48,8 @@ a {
   height: 225px;
   border-radius: 10px;
   background: #FF6060;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-content p {
   height: 52px;

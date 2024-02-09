@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -21,6 +22,13 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
 ul {
   list-style-type: none;
   display: flex;
@@ -36,12 +44,24 @@ ul {
   margin-bottom: 27px;
   font-weight: 500;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .nav-active {
   border-bottom: 1px solid black;
 }
 
+@media (min-width: 1025px) {
+  .navigation {
+    margin: 45px 100px 50px 100px;
+    font-size: 24px;
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+  .navigation ul {
+    gap: 57px;
+  }
+}
 @font-face {
   font-family: "font-1";
   src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
@@ -50,6 +70,7 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -65,6 +86,13 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
 .banner {
   display: flex;
   align-items: center;
@@ -79,7 +107,7 @@ a {
   font-weight: 700;
   font-size: 24px;
   color: #FFFFFF;
-  padding: 31px 94px 32px 16px;
+  padding: 31px 88px 32px 16px;
 }
 
 .imgTitle {
@@ -92,11 +120,24 @@ a {
   filter: brightness(60%);
 }
 
+@media (min-width: 1025px) {
+  .banner {
+    margin: 0 100px 43px 100px;
+  }
+  .banner .imgTitle {
+    width: 1240px;
+  }
+  .banner .title {
+    font-size: 48px;
+    width: 843px;
+  }
+}
 .footer {
   background-color: black;
   width: 100%;
   padding: 66px 121px 58px 121px;
   margin: 0;
+  margin-top: 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,8 +146,16 @@ a {
   color: white;
   font-size: 12px;
   text-align: center;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer p {
+    font-size: 24px;
+  }
+}
 @font-face {
   font-family: "font-1";
   src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
@@ -115,6 +164,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -130,6 +180,13 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
 .erreur-content {
   margin: 113px 0 113px 0;
   display: flex;
@@ -162,6 +219,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -177,6 +235,13 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
 .card-content {
   margin: 20px 0 20px 0;
   display: flex;
@@ -196,6 +261,8 @@ a {
   height: 225px;
   border-radius: 10px;
   background: #FF6060;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-content p {
   height: 52px;
@@ -210,6 +277,90 @@ a {
   line-height: 142.6%;
 }
 
-.collapse-title {
+@media (min-width: 1025px) {
+  .card-content {
+    padding: 56px 50px 43px 50px;
+    margin: 43px 100px 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+  .card-content article {
+    width: 340px;
+    height: 340px;
+  }
+  .card-content img {
+    width: 340px;
+    height: 340px;
+  }
+  .card-content p {
+    top: 80%;
+  }
+}
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
   background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.collapse {
+  padding: 0 28px 0 20px;
+  width: 100%;
+}
+.collapse .collapse-content {
+  font-size: 13px;
+  padding: 13px 28px 20px 20px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+.collapse .collapse-title {
+  padding: 19px 28px 20px 20px;
+  background: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0px 10px;
+  margin-top: 20px;
+}
+.collapse .collapse-title .subtitle {
+  color: #FFFFFF;
+}
+.collapse .collapse-title .rotate {
+  transition: transform 0.3s ease;
+}
+.collapse .collapse-title .rotateUp {
+  transform: rotate(180deg);
+}
+.collapse .collapse-title .rotateDown {
+  transform: rotate(0);
+}
+.collapse .collapse-about {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

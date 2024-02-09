@@ -1,14 +1,15 @@
 @import "../pages/settings";
 
-
 .collapse {
     padding: 0 28px 0 20px;
     width: 100%;
 
     .collapse-content {
         font-size: 13px;
-        padding: 19px 28px 20px 20px;
+        padding: 13px 28px 20px 20px;
+        background-color: #f6f6f673;
     }
+
 
     .collapse-title {
         padding: 19px 28px 20px 20px;
@@ -19,12 +20,31 @@
         font-size: 13px;
         font-weight: 700;
         padding: 0px 10px;
-
+        margin-top: 20px;
 
         .subtitle {
             color: $color-3;
+        }
 
+        .rotate {
+            transition: transform 0.3s ease;
+        }
+
+        .rotateUp {
+            transform: rotate(180deg);
 
         }
+
+        .rotateDown {
+
+            transform: rotate(0);
+        }
     }
+
+    .collapse-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }

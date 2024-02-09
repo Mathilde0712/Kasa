@@ -5,10 +5,10 @@ const Navigation = () => {
             <img src="./src/Assets/images/LOGO_mobile.svg" alt="logo"/>
             <ul>
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")} >
-                    <li>ACCUEIL</li>
+                    <li>Accueil</li>
                 </NavLink>
                 <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                    <li>A PROPOS</li>
+                    <li>A propos</li>
                 </NavLink>
             </ul>
         </div>
