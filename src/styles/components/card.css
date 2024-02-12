@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -22,7 +21,7 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   body {
     min-width: 1025px;
     margin: 0;
@@ -30,36 +29,64 @@ a {
   }
 }
 .card-content {
-  margin: 20px 0 20px 0;
-  display: flex;
-  flex-direction: column;
+  margin: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 20px;
+  grid-gap: 20px;
 }
 .card-content article {
+  position: relative;
   overflow: hidden;
-  width: 335px;
+  width: 100%;
   height: 225px;
   cursor: pointer;
 }
 .card-content img {
-  position: absolute;
-  width: 335px;
+  width: 100%;
   height: 225px;
   border-radius: 10px;
   background: #FF6060;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 .card-content p {
   height: 52px;
   color: #FFFFFF;
-  position: relative;
+  position: absolute;
   padding: 0 20px 0 20px;
   top: 70%;
-  z-index: 5;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 142.6%;
+}
+
+@media (min-width: 768px) {
+  .card-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-content article {
+    width: 100%;
+    height: 250px;
+  }
+  .card-content img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (min-width: 1025px) {
+  .card-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 56px 100px 50px 100px;
+  }
+  .card-content article {
+    width: 100%;
+    height: 340px;
+  }
+  .card-content img {
+    width: 100%;
+    height: 340px;
+  }
 }/*# sourceMappingURL=card.css.map */

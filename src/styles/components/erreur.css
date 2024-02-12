@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -22,7 +21,7 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   body {
     min-width: 1025px;
     margin: 0;

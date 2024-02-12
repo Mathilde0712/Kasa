@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -22,7 +21,7 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   body {
     min-width: 1025px;
     margin: 0;
@@ -56,12 +55,19 @@ a {
   filter: brightness(60%);
 }
 
+@media (min-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
 @media (min-width: 1025px) {
   .banner {
     margin: 0 100px 43px 100px;
   }
   .banner .imgTitle {
-    width: 100%;
+    width: 1240px;
   }
   .banner .title {
     font-size: 48px;
