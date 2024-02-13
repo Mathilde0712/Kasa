@@ -1,50 +1,167 @@
 @import "../pages/settings";
 
-.collapse {
-    padding: 0 28px 0 20px;
-    width: 100%;
+.collapse-about {
+    display: flex;
+    flex-direction: column;
 
-    .collapse-content {
-        font-size: 13px;
-        padding: 13px 28px 20px 20px;
-        background-color: #f6f6f673;
+    .collapse {
+        padding: 0 28px 0 20px;
+
+        width: 100%;
+
+        .collapse-content {
+            font-size: 13px;
+            padding: 13px 28px 20px 20px;
+            background-color: #f6f6f673;
+        }
+
+        .collapse-title {
+            padding: 19px 28px 20px 20px;
+            background: $color-1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 0px 10px;
+            margin-top: 20px;
+            width: 100%;
+
+            .subtitle {
+                color: $color-3;
+            }
+
+            .rotate {
+                transition: transform 0.3s ease;
+            }
+
+            .rotateUp {
+                transform: rotate(180deg);
+            }
+
+            .rotateDown {
+                transform: rotate(0);
+            }
+        }
     }
+}
 
+// ----------------------------------------------------- style pour les collapses des fiches logements
+// .collapse-card {
+//     display: flex;
+//     flex-direction: column;
 
-    .collapse-title {
-        padding: 19px 28px 20px 20px;
-        background: $color-1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 13px;
-        font-weight: 700;
-        padding: 0px 10px;
-        margin-top: 20px;
+//     .collapse {
+//         width: 100%;
 
-        .subtitle {
-            color: $color-3;
-        }
+//         .collapse-content {
+//             font-size: 13px;
+//             padding: 13px 28px 20px 20px;
+//             background-color: #f6f6f673;
+//         }
 
-        .rotate {
-            transition: transform 0.3s ease;
-        }
+//         .collapse-title {
+//             padding: 19px 28px 20px 20px;
+//             background: $color-1;
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             font-size: 13px;
+//             font-weight: 700;
+//             padding: 0px 10px;
+//             margin-top: 20px;
+//             width: 100%;
 
-        .rotateUp {
-            transform: rotate(180deg);
+//             .subtitle {
+//                 color: $color-3;
+//             }
 
-        }
+//             .rotate {
+//                 transition: transform 0.3s ease;
+//             }
 
-        .rotateDown {
+//             .rotateUp {
+//                 transform: rotate(180deg);
+//             }
 
-            transform: rotate(0);
-        }
-    }
+//             .rotateDown {
+//                 transform: rotate(0);
+//             }
+//         }
+//     }
+// }
 
+//------------------------------------------ media query
+@media (min-width: 768px) {
     .collapse-about {
-        display: flex;
-        flex-direction: column;
+        margin: 0 25px 0 25px;
+
+        .collapse {
+            padding: 0 108px 0 108px;
+
+            .collapse-title {
+                font-size: 18px;
+                padding: 8px 15px 8px 10px;
+            }
+
+            .collapse-content {
+                font-size: 15px;
+            }
+        }
     }
 
+    //---------------------------------------- collaspe logement
+    // .collapse-card {
+    //     margin: 0 25px 0 25px;
 
+    //     .collapse {
+    //         padding: 0 108px 0 108px;
+
+    //         .collapse-title {
+    //             font-size: 18px;
+    //             padding: 8px 15px 8px 10px;
+    //         }
+
+    //         .collapse-content {
+    //             font-size: 15px;
+    //         }
+    //     }
+    // }
+}
+
+@media (min-width: 1025px) {
+    .collapse-about {
+        margin: 0 100px 0 100px;
+
+        .collapse {
+            padding: 0 108px 0 108px;
+
+            .collapse-title {
+                font-size: 24px;
+                padding: 10px 20px 10px 15px;
+            }
+
+            .collapse-content {
+                font-size: 18px;
+            }
+        }
+    }
+
+    //-------------------------------------------------- collaspe logement
+    //     .collapse-card {
+    //         margin: 0 100px 0 100px;
+
+    //         .collapse {
+    //             padding: 0 0px 0 0px;
+
+    //             .collapse-title {
+    //                 font-size: 24px;
+    //                 padding: 10px 20px 10px 15px;
+    //             }
+
+    //             .collapse-content {
+    //                 font-size: 18px;
+    //             }
+    //         }
+    //     }
 }

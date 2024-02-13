@@ -66,6 +66,9 @@ a {
 @media (min-width: 768px) {
   .card-content {
     grid-template-columns: 1fr 1fr;
+    background-color: #f6f6f6;
+    padding: 56px 50px 50px 50px;
+    border-radius: 25px;
   }
   .card-content article {
     width: 100%;
@@ -79,7 +82,7 @@ a {
 @media (min-width: 1025px) {
   .card-content {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 56px 100px 50px 100px;
+    margin: 43px 100px 50px 100px;
   }
   .card-content article {
     width: 100%;

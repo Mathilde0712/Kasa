@@ -28,16 +28,20 @@ a {
     padding: 0;
   }
 }
-.collapse {
+.collapse-about {
+  display: flex;
+  flex-direction: column;
+}
+.collapse-about .collapse {
   padding: 0 28px 0 20px;
   width: 100%;
 }
-.collapse .collapse-content {
+.collapse-about .collapse .collapse-content {
   font-size: 13px;
   padding: 13px 28px 20px 20px;
   background-color: rgba(246, 246, 246, 0.4509803922);
 }
-.collapse .collapse-title {
+.collapse-about .collapse .collapse-title {
   padding: 19px 28px 20px 20px;
   background: #FF6060;
   display: flex;
@@ -48,19 +52,46 @@ a {
   padding: 0px 10px;
   margin-top: 20px;
 }
-.collapse .collapse-title .subtitle {
+.collapse-about .collapse .collapse-title .subtitle {
   color: #FFFFFF;
 }
-.collapse .collapse-title .rotate {
+.collapse-about .collapse .collapse-title .rotate {
   transition: transform 0.3s ease;
 }
-.collapse .collapse-title .rotateUp {
+.collapse-about .collapse .collapse-title .rotateUp {
   transform: rotate(180deg);
 }
-.collapse .collapse-title .rotateDown {
+.collapse-about .collapse .collapse-title .rotateDown {
   transform: rotate(0);
 }
-.collapse .collapse-about {
-  display: flex;
-  flex-direction: column;
+
+@media (min-width: 768px) {
+  .collapse-about {
+    margin: 0 25px 0 25px;
+  }
+  .collapse-about .collapse {
+    padding: 0 108px 0 108px;
+  }
+  .collapse-about .collapse .collapse-title {
+    font-size: 18px;
+    padding: 8px 15px 8px 10px;
+  }
+  .collapse-about .collapse .collapse-content {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .collapse-about {
+    margin: 0 100px 0 100px;
+  }
+  .collapse-about .collapse {
+    padding: 0 108px 0 108px;
+  }
+  .collapse-about .collapse .collapse-title {
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+  }
+  .collapse-about .collapse .collapse-content {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=collapse.css.map */

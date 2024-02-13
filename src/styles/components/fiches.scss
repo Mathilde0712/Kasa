@@ -1,0 +1,69 @@
+@import "../pages/settings";
+
+
+.fiches-content {
+    margin: 27px 20px 27px 20px;
+    padding: 0;
+
+    .fiches-title {
+        color: $color-1;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .fiches-subtitle {
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 24px 0;
+
+    .tags-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 0px 2px 0px;
+        text-align: center;
+        color: $color-3;
+        background-color: $color-1;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 700;
+        width: 84px;
+
+    }
+}
+
+.fiches-content-host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .host-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10.5px;
+
+        img {
+            border-radius: 50%;
+            height: 32px;
+            width: 32px;
+        }
+
+        p {
+
+            text-align: right;
+            color: $color-1;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+    }
+}

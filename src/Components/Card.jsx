@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import {HousesCards} from "../data/datas"
+import datas from "../data/datas.json"
 
 const Card = () => {
 // const [data, setData] = useState([])
@@ -17,9 +17,10 @@ const Card = () => {
 //         console.error('Erreur lors de la récupération des données JSON :', error);
 //     }
 // }
+
  return (
    <div className="card-content">
-    {HousesCards.map((data)=>
+    {datas.map((data)=>
         <article key={data.id}>
             <NavLink to="/fiches">
       <img src={data.cover} alt={data.title}/>
@@ -29,6 +30,7 @@ const Card = () => {
     )}
    </div>
  );
+ 
 };
 export default Card;
 

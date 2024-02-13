@@ -7,7 +7,7 @@ const Navigation = () => {
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")} >
                     <li>Accueil</li>
                 </NavLink>
-                <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                <NavLink to="/a-propos" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>A propos</li>
                 </NavLink>
             </ul>

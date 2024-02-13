@@ -50,7 +50,13 @@ ul {
   border-bottom: 1px solid black;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+  }
+}
+@media (min-width: 1025px) {
   .navigation {
     margin: 45px 100px 50px 100px;
     font-size: 24px;
@@ -118,6 +124,13 @@ a {
   filter: brightness(60%);
 }
 
+@media (min-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
 @media (min-width: 1025px) {
   .banner {
     margin: 0 100px 43px 100px;
@@ -149,7 +162,7 @@ a {
   padding-right: 10px;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   .footer p {
     font-size: 24px;
   }
@@ -276,6 +289,9 @@ a {
 @media (min-width: 768px) {
   .card-content {
     grid-template-columns: 1fr 1fr;
+    background-color: #f6f6f6;
+    padding: 56px 50px 50px 50px;
+    border-radius: 25px;
   }
   .card-content article {
     width: 100%;
@@ -365,4 +381,16 @@ a {
 .collapse .collapse-about {
   display: flex;
   flex-direction: column;
+  margin: 0 50px 0 50px;
+}
+
+@media (min-width: 768px) {
+  .collapse {
+    padding: 0 108px 0 108px;
+  }
+}
+@media (min-width: 1025px) {
+  .collapse {
+    padding: 0 108px 0 108px;
+  }
 }/*# sourceMappingURL=index.css.map */

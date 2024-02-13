@@ -1,9 +1,9 @@
 import  { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Fiches from "./Pages/Fiches";
 import PageErreur from "./Pages/PageErreur";
 import "./styles/pages/index.scss"
+import Fiches1 from "./Pages/Fiches1";
 
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/fiches" element={<Fiches/>}/>
+      <Route path="/a-propos" element={<About/>}/>
+      <Route path="/fiches" element={<Fiches1 />}/>
       <Route path="*" element={<PageErreur/>}/>
 
       
