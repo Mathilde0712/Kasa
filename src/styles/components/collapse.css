@@ -34,7 +34,7 @@ a {
 }
 .collapse-about .collapse {
   padding: 0 28px 0 20px;
-  width: 100%;
+  border-radius: 5px;
 }
 .collapse-about .collapse .collapse-content {
   font-size: 13px;
@@ -51,6 +51,8 @@ a {
   font-weight: 700;
   padding: 0px 10px;
   margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
 }
 .collapse-about .collapse .collapse-title .subtitle {
   color: #FFFFFF;
@@ -65,18 +67,77 @@ a {
   transform: rotate(0);
 }
 
+.collapse-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+.collapse-card .collapse {
+  border-radius: 5px;
+}
+.collapse-card .collapse .collapse-content {
+  font-size: 13px;
+  padding: 13px 28px 20px 20px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+.collapse-card .collapse .collapse-title {
+  padding: 19px 28px 20px 20px;
+  background: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0px 10px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+.collapse-card .collapse .collapse-title .subtitle {
+  color: #FFFFFF;
+}
+.collapse-card .collapse .collapse-title .rotate {
+  transition: transform 0.3s ease;
+}
+.collapse-card .collapse .collapse-title .rotateUp {
+  transform: rotate(180deg);
+}
+.collapse-card .collapse .collapse-title .rotateDown {
+  transform: rotate(0);
+}
+
 @media (min-width: 768px) {
   .collapse-about {
     margin: 0 25px 0 25px;
   }
   .collapse-about .collapse {
     padding: 0 108px 0 108px;
+    width: 100%;
   }
   .collapse-about .collapse .collapse-title {
-    font-size: 18px;
+    font-size: 16px;
     padding: 8px 15px 8px 10px;
   }
   .collapse-about .collapse .collapse-content {
+    font-size: 15px;
+  }
+  .collapse-card {
+    margin: 0 25px 0 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+  }
+  .collapse-card div {
+    width: 100%;
+  }
+  .collapse-card .collapse {
+    width: 100%;
+  }
+  .collapse-card .collapse .collapse-title {
+    font-size: 16px;
+    padding: 8px 15px 8px 10px;
+  }
+  .collapse-card .collapse .collapse-content {
     font-size: 15px;
   }
 }
@@ -92,6 +153,19 @@ a {
     padding: 10px 20px 10px 15px;
   }
   .collapse-about .collapse .collapse-content {
+    font-size: 18px;
+  }
+  .collapse-card {
+    margin: 0 100px 0 100px;
+  }
+  .collapse-card .collapse {
+    padding: 0 0px 0 0px;
+  }
+  .collapse-card .collapse .collapse-title {
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+  }
+  .collapse-card .collapse .collapse-content {
     font-size: 18px;
   }
 }/*# sourceMappingURL=collapse.css.map */

@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.fiches-content {
+  margin: 15px 20px 0px 20px;
+  padding: 0;
+}
+.fiches-content .fiches-title {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.fiches-content .fiches-subtitle {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 24px 0;
+}
+.tags .tags-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 0px 2px 0px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  width: 84px;
+}
+
+.fiches-content-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fiches-content-host .host-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10.5px;
+}
+.fiches-content-host .host-info img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.fiches-content-host .host-info p {
+  text-align: right;
+  color: #FF6060;
+  font-size: 12px;
+  font-weight: 500;
+  width: 80px;
+}
+.fiches-content-host .rate {
+  width: 93px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fiches-content-host .rate .stars {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 768px) {
+  .fiches-content {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fiches-content .fiches-title {
+    font-size: 32px;
+  }
+  .fiches-content .fiches-subtitle {
+    font-size: 16px;
+  }
+  .fiches-content .tags-content {
+    padding: 3px 40px 2px 40px;
+    text-align: center;
+    font-size: 14px;
+    width: 115px;
+  }
+  .fiches-content-host {
+    flex-direction: column-reverse;
+    margin-top: -14px;
+  }
+  .fiches-content-host .host-info img {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+  }
+  .fiches-content-host .host-info p {
+    font-size: 16px;
+    width: 110px;
+  }
+  .fiches-content-host .rate {
+    width: 196px;
+    height: 36px;
+    gap: 5px;
+    display: flex;
+    justify-content: right;
+  }
+  .fiches-content-host .rate .stars {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .fiches-content {
+    margin: 30px 100px 24px 100px;
+  }
+  .fiches-content .fiches-title {
+    font-size: 36px;
+  }
+  .fiches-content .fiches-subtitle {
+    font-size: 18px;
+  }
+}
+.collapse-fiche {
+  flex-direction: row;
+}/*# sourceMappingURL=fiches.css.map */

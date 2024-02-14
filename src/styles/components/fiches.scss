@@ -1,8 +1,7 @@
 @import "../pages/settings";
 
-
 .fiches-content {
-    margin: 27px 20px 27px 20px;
+    margin: 15px 20px 0px 20px;
     padding: 0;
 
     .fiches-title {
@@ -22,7 +21,7 @@
 .tags {
     display: flex;
     gap: 10px;
-    margin: 10px 0 24px 0;
+    margin: 20px 0 24px 0;
 
     .tags-content {
         display: flex;
@@ -36,7 +35,6 @@
         font-size: 10px;
         font-weight: 700;
         width: 84px;
-
     }
 }
 
@@ -58,12 +56,98 @@
         }
 
         p {
-
             text-align: right;
             color: $color-1;
             font-size: 12px;
             font-weight: 500;
+            width: 80px;
+        }
+    }
+
+    .rate {
+        width: 93px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .stars {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@media (min-width : 768px) {
+    .fiches-content {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fiches-title {
+            font-size: 32px;
         }
 
+        .fiches-subtitle {
+            font-size: 16px;
+        }
+
+        .tags-content {
+            padding: 3px 40px 2px 40px;
+            text-align: center;
+            font-size: 14px;
+            width: 115px;
+        }
     }
+
+    .fiches-content-host {
+        flex-direction: column-reverse;
+        margin-top: -14px;
+
+        .host-info {
+            img {
+                border-radius: 50%;
+                height: 64px;
+                width: 64px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 110px;
+            }
+        }
+
+        .rate {
+            width: 196px;
+            height: 36px;
+            gap: 5px;
+            display: flex;
+            justify-content: right;
+
+            .stars {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .fiches-content {
+        margin: 30px 100px 24px 100px;
+
+        .fiches-title {
+            font-size: 36px;
+        }
+
+        .fiches-subtitle {
+            font-size: 18px;
+        }
+    }
+}
+
+.collapse-fiche {
+    flex-direction: row;
 }

@@ -40,7 +40,7 @@ ul {
   align-items: center;
   justify-content: space-around;
   padding-top: 20px;
-  margin-bottom: 27px;
+  margin: 0px 20px 27px 20px;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
@@ -54,6 +54,7 @@ ul {
   .navigation {
     justify-content: space-between;
     margin: 20px 20px 20px 20px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1025px) {
@@ -101,7 +102,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 20px 22px 20px;
+  margin: 0 20px 0px 20px;
 }
 
 .title {
@@ -109,7 +110,7 @@ a {
   z-index: 1;
   width: 335px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #FFFFFF;
   padding: 31px 88px 32px 16px;
 }
@@ -122,24 +123,29 @@ a {
      object-fit: cover;
   border-radius: 10px;
   filter: brightness(60%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 768px) {
   .title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     width: 100%;
+  }
+  .imgTitle {
+    height: 168px;
   }
 }
 @media (min-width: 1025px) {
   .banner {
-    margin: 0 100px 43px 100px;
+    margin: 0 100px 0px 100px;
   }
   .banner .imgTitle {
-    width: 1240px;
+    width: 100%;
+    height: 223px;
   }
   .banner .title {
-    font-size: 48px;
+    font-size: 3rem;
     width: 843px;
   }
 }
@@ -301,11 +307,14 @@ a {
     width: 100%;
     height: 250px;
   }
+  .card-content p {
+    top: 80%;
+  }
 }
 @media (min-width: 1025px) {
   .card-content {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 56px 100px 50px 100px;
+    margin: 43px 100px 50px 100px;
   }
   .card-content article {
     width: 100%;
@@ -346,16 +355,20 @@ a {
     padding: 0;
   }
 }
-.collapse {
-  padding: 0 28px 0 20px;
-  width: 100%;
+.collapse-about {
+  display: flex;
+  flex-direction: column;
 }
-.collapse .collapse-content {
+.collapse-about .collapse {
+  padding: 0 28px 0 20px;
+  border-radius: 5px;
+}
+.collapse-about .collapse .collapse-content {
   font-size: 13px;
   padding: 13px 28px 20px 20px;
   background-color: rgba(246, 246, 246, 0.4509803922);
 }
-.collapse .collapse-title {
+.collapse-about .collapse .collapse-title {
   padding: 19px 28px 20px 20px;
   background: #FF6060;
   display: flex;
@@ -365,32 +378,363 @@ a {
   font-weight: 700;
   padding: 0px 10px;
   margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
 }
-.collapse .collapse-title .subtitle {
+.collapse-about .collapse .collapse-title .subtitle {
   color: #FFFFFF;
 }
-.collapse .collapse-title .rotate {
+.collapse-about .collapse .collapse-title .rotate {
   transition: transform 0.3s ease;
 }
-.collapse .collapse-title .rotateUp {
+.collapse-about .collapse .collapse-title .rotateUp {
   transform: rotate(180deg);
 }
-.collapse .collapse-title .rotateDown {
+.collapse-about .collapse .collapse-title .rotateDown {
   transform: rotate(0);
 }
-.collapse .collapse-about {
+
+.collapse-card {
   display: flex;
   flex-direction: column;
-  margin: 0 50px 0 50px;
+  margin: 0 20px 0 20px;
+}
+.collapse-card .collapse {
+  border-radius: 5px;
+}
+.collapse-card .collapse .collapse-content {
+  font-size: 13px;
+  padding: 13px 28px 20px 20px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+.collapse-card .collapse .collapse-title {
+  padding: 19px 28px 20px 20px;
+  background: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0px 10px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+.collapse-card .collapse .collapse-title .subtitle {
+  color: #FFFFFF;
+}
+.collapse-card .collapse .collapse-title .rotate {
+  transition: transform 0.3s ease;
+}
+.collapse-card .collapse .collapse-title .rotateUp {
+  transform: rotate(180deg);
+}
+.collapse-card .collapse .collapse-title .rotateDown {
+  transform: rotate(0);
 }
 
 @media (min-width: 768px) {
-  .collapse {
+  .collapse-about {
+    margin: 0 25px 0 25px;
+  }
+  .collapse-about .collapse {
     padding: 0 108px 0 108px;
+    width: 100%;
+  }
+  .collapse-about .collapse .collapse-title {
+    font-size: 16px;
+    padding: 8px 15px 8px 10px;
+  }
+  .collapse-about .collapse .collapse-content {
+    font-size: 15px;
+  }
+  .collapse-card {
+    margin: 0 25px 0 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+  }
+  .collapse-card div {
+    width: 100%;
+  }
+  .collapse-card .collapse {
+    width: 100%;
+  }
+  .collapse-card .collapse .collapse-title {
+    font-size: 16px;
+    padding: 8px 15px 8px 10px;
+  }
+  .collapse-card .collapse .collapse-content {
+    font-size: 15px;
   }
 }
 @media (min-width: 1025px) {
-  .collapse {
+  .collapse-about {
+    margin: 0 100px 0 100px;
+  }
+  .collapse-about .collapse {
     padding: 0 108px 0 108px;
+  }
+  .collapse-about .collapse .collapse-title {
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+  }
+  .collapse-about .collapse .collapse-content {
+    font-size: 18px;
+  }
+  .collapse-card {
+    margin: 0 100px 0 100px;
+  }
+  .collapse-card .collapse {
+    padding: 0 0px 0 0px;
+  }
+  .collapse-card .collapse .collapse-title {
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+  }
+  .collapse-card .collapse .collapse-content {
+    font-size: 18px;
+  }
+}
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.fiches-content {
+  margin: 15px 20px 0px 20px;
+  padding: 0;
+}
+.fiches-content .fiches-title {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.fiches-content .fiches-subtitle {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 24px 0;
+}
+.tags .tags-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 0px 2px 0px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  width: 84px;
+}
+
+.fiches-content-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fiches-content-host .host-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10.5px;
+}
+.fiches-content-host .host-info img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.fiches-content-host .host-info p {
+  text-align: right;
+  color: #FF6060;
+  font-size: 12px;
+  font-weight: 500;
+  width: 80px;
+}
+.fiches-content-host .rate {
+  width: 93px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fiches-content-host .rate .stars {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 768px) {
+  .fiches-content {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fiches-content .fiches-title {
+    font-size: 32px;
+  }
+  .fiches-content .fiches-subtitle {
+    font-size: 16px;
+  }
+  .fiches-content .tags-content {
+    padding: 3px 40px 2px 40px;
+    text-align: center;
+    font-size: 14px;
+    width: 115px;
+  }
+  .fiches-content-host {
+    flex-direction: column-reverse;
+    margin-top: -14px;
+  }
+  .fiches-content-host .host-info img {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+  }
+  .fiches-content-host .host-info p {
+    font-size: 16px;
+    width: 110px;
+  }
+  .fiches-content-host .rate {
+    width: 196px;
+    height: 36px;
+    gap: 5px;
+    display: flex;
+    justify-content: right;
+  }
+  .fiches-content-host .rate .stars {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .fiches-content {
+    margin: 30px 100px 24px 100px;
+  }
+}
+.collapse-fiche {
+  flex-direction: row;
+}
+
+@font-face {
+  font-family: "font-1";
+  src: url(../../Assets/fonts/Montserrat/Montserrat.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    min-width: 1025px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.carrousel {
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  width: 100%;
+  height: 225px;
+}
+.carrousel img {
+  width: 100%;
+  height: 225px;
+  background: #FF6060;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.carrousel .arrow {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+.carrousel .arrowRight {
+  right: 7%;
+}
+.carrousel .arrowLeft {
+  left: 7%;
+}
+
+@media (min-width: 768px) {
+  .carrousel {
+    height: 320px;
+  }
+  .carrousel img {
+    height: 320px;
+  }
+  .carrousel .arrow {
+    width: 36px;
+    height: 52px;
+  }
+}
+@media (min-width: 1025px) {
+  .carrousel {
+    height: 415px;
+    padding: 0px 100px 0px 100px;
+  }
+  .carrousel img {
+    height: 415px;
+  }
+  .carrousel .arrow {
+    width: 47px;
+    height: 79px;
+  }
+  .carrousel .arrowRight {
+    right: 10%;
+  }
+  .carrousel .arrowLeft {
+    left: 10%;
   }
 }/*# sourceMappingURL=index.css.map */
