@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ArrowBack from "../Assets/images/arrow_back.svg";
+import PropTypes from "prop-types"
 
 const Collapse = ({ title, content }) => {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,7 @@ const Collapse = ({ title, content }) => {
         </div>
         {open && (
           <div>
-            <p className= "collapse-content">{content}</p>
+            <div className= "collapse-content">{content}</div>
           </div>
         )}
       </article>
@@ -29,4 +30,8 @@ const Collapse = ({ title, content }) => {
   );
 };
 
+Collapse.propTypes = {
+  title: PropTypes.string,
+  content : PropTypes.node,
+  }
 export default Collapse;

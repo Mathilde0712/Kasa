@@ -22,19 +22,21 @@
     display: flex;
     gap: 10px;
     margin: 20px 0 24px 0;
+    flex-wrap: wrap;
 
     .tags-content {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2px 0px 2px 0px;
+        padding: 2px 29px 2px 29px;
         text-align: center;
         color: $color-3;
         background-color: $color-1;
         border-radius: 5px;
         font-size: 10px;
         font-weight: 700;
-        width: 84px;
+        white-space: nowrap;
+
     }
 }
 
@@ -94,10 +96,10 @@
         }
 
         .tags-content {
-            padding: 3px 40px 2px 40px;
+            padding: 3px 20px 2px 20px;
             text-align: center;
             font-size: 14px;
-            width: 115px;
+
         }
     }
 

@@ -1,20 +1,19 @@
 // import { useParams } from "react-router-dom";
-import { useState } from "react";
-import datas from "../data/datas.json";
 import Collapse from "./Collapse";
 import Rating from "./Rating";
+import PropTypes from "prop-types"
 
-const Fiches = ({ cardNumber }) => {
-  const [currentCard] = useState(datas[cardNumber]);
+const Fiches = ({title, location, tags, rating, host, description, equipments}) => {
+ 
 
   return (
     <div className="fiches">
       <section className="fiches-content">
         <div className="fiches-content-title">
-          <h2 className="fiches-title">{currentCard.title}</h2>
-          <h3 className="fiches-subtitle">{currentCard.location}</h3>
+          <h2 className="fiches-title">{title}</h2>
+          <h3 className="fiches-subtitle">{location}</h3>
           <div className="tags">
-            {currentCard.tags.map((tag) => (
+            {tags.map((tag) => (
               <p key={tag.toString()} className="tags-content">
                 {tag}
               </p>
@@ -22,26 +21,36 @@ const Fiches = ({ cardNumber }) => {
           </div>
         </div>
         <div className="fiches-content-host">
-          <Rating rating={currentCard.rating} />
+          <Rating rating={rating} />
           <div className="host-info">
-            <p>{currentCard.host.name}</p>
-            <img src={currentCard.host.picture}></img>
+            <p>{host.name}</p>
+            <img src={host.picture}></img>
           </div>
         </div>
       </section>
       <section className=" collapse-card">
-        <Collapse title="Description" content={currentCard.description} />
+        <Collapse title="Description" content={description} />
         <Collapse
           title="Equipements"
-          content={currentCard.equipments.map((equipment) => (
-            <p key="{equipment}" className="equipement-content">
-              {equipment}
-            </p>
+          content={equipments.map((equipments,index) => (
+            <p key={index} className="equipement-content">
+              {equipments}
+            </p> 
           ))}
         />
       </section>
     </div>
   );
 };
+
+Fiches.propTypes = {
+  title: PropTypes.string,
+  location: PropTypes.string,
+  tags: PropTypes.array,
+  rating: PropTypes.string, 
+  host: PropTypes.object, 
+  description:PropTypes.string, 
+  equipments:PropTypes.array,
+}
 
 export default Fiches;

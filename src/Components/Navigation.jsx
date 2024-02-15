@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom"; 
+import logo from "../Assets/images/LOGO_mobile.svg"
 const Navigation = () => {
     return (
         <div className="navigation">
-            <img src="./src/Assets/images/LOGO_mobile.svg" alt="logo"/>
+            <img src={logo} alt="logo"/>
             <ul>
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")} >
                     <li>Accueil</li>

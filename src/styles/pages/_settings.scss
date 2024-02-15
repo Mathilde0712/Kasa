@@ -31,9 +31,10 @@ a {
     cursor: pointer;
 }
 
-@media (min-width : 1025px) and (max-width : 1440px) {
+@media (min-width : 1025px) {
     body {
         min-width: 1025px;
+
         margin: 0;
         padding: 0;
     }

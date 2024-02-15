@@ -1,5 +1,5 @@
 // import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import datas from "../data/datas.json"
 
 const Card = () => {
@@ -22,10 +22,10 @@ const Card = () => {
    <div className="card-content">
     {datas.map((data)=>
         <article key={data.id}>
-            <NavLink to="/fiches">
+            <Link to={`/fiches/${data.id}`}>
       <img src={data.cover} alt={data.title}/>
       <p className="subtitle">{data.title}</p>
-      </NavLink>
+      </Link>
      </article>
     )}
    </div>

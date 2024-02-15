@@ -3,16 +3,22 @@ import Footer from "../Components/Footer";
 import Fiches from "../Components/Fiche";
 import  Carrousel from "../Components/Carrousel"
 import datas from "../data/datas.json"
+import { useParams } from "react-router-dom";
+import PageErreur from "./PageErreur";
 
 const Fiches1 = () => {
+    const id = useParams()
+    const houseDatas = datas.find((houseDatas)=> {return houseDatas.id === id.id})
     
-    return (
-        <div>
+   
+    return ( houseDatas ? 
+       ( <div>
         <Navigation />
-        <Carrousel />
-        <Fiches cardNumber={0}/>
+        <Carrousel picture = {houseDatas.pictures}/>
+        <Fiches title={houseDatas.title} location = {houseDatas.location} tags= {houseDatas.tags} rating= {houseDatas.rating} host= {houseDatas.host} description= {houseDatas.description} equipments= {houseDatas.equipments} picture = {houseDatas.pictures}
+        />
         <Footer />
-      </div> 
+      </div>) : (<PageErreur />)
   
       
     );
