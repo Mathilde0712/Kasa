@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import PageErreur from "./Pages/PageErreur";
 import "./styles/pages/index.scss"
-import Fiches1 from "./Pages/Fiches1";
+import Apparts from "./Pages/Apparts";
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/a-propos" element={<About/>}/>
-      <Route path="/fiches/:id" element={<Fiches1 />}/>
+      <Route path="/fiches/:id" element={<Apparts />}/>
       <Route path="*" element={<PageErreur/>}/>
 
       

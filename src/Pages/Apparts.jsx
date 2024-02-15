@@ -6,7 +6,7 @@ import datas from "../data/datas.json"
 import { useParams } from "react-router-dom";
 import PageErreur from "./PageErreur";
 
-const Fiches1 = () => {
+const Apparts = () => {
     const id = useParams()
     const houseDatas = datas.find((houseDatas)=> {return houseDatas.id === id.id})
     
@@ -24,4 +24,4 @@ const Fiches1 = () => {
     );
 };
 
-export default Fiches1;
+export default Apparts;
