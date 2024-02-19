@@ -21,11 +21,13 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    margin: 0;
+    max-width: 1440px;
+    margin: auto;
     padding: 0;
+    box-sizing: border-box;
   }
 }
 .fiches-content {
@@ -48,19 +50,20 @@ a {
   display: flex;
   gap: 10px;
   margin: 20px 0 24px 0;
+  flex-wrap: wrap;
 }
 .tags .tags-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px 0px 2px 0px;
+  padding: 2px 29px 2px 29px;
   text-align: center;
   color: #FFFFFF;
   background-color: #FF6060;
   border-radius: 5px;
   font-size: 10px;
   font-weight: 700;
-  width: 84px;
+  white-space: nowrap;
 }
 
 .fiches-content-host {
@@ -112,10 +115,9 @@ a {
     font-size: 16px;
   }
   .fiches-content .tags-content {
-    padding: 3px 40px 2px 40px;
+    padding: 3px 20px 2px 20px;
     text-align: center;
     font-size: 14px;
-    width: 115px;
   }
   .fiches-content-host {
     flex-direction: column-reverse;

@@ -34,6 +34,9 @@ ul {
     text-transform: capitalize;
     justify-content: space-between;
   }
+  .navigation img {
+    width: 210px;
+  }
   .navigation ul {
     gap: 57px;
   }

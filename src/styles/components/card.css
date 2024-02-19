@@ -21,11 +21,13 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    margin: 0;
+    max-width: 1440px;
+    margin: auto;
     padding: 0;
+    box-sizing: border-box;
   }
 }
 .card-content {
@@ -79,13 +81,14 @@ a {
     height: 250px;
   }
   .card-content p {
-    top: 80%;
+    top: 75%;
   }
 }
 @media (min-width: 1025px) {
   .card-content {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 43px 100px 50px 100px;
+    gap: 60px;
   }
   .card-content article {
     width: 100%;

@@ -21,11 +21,13 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    margin: 0;
+    max-width: 1440px;
+    margin: auto;
     padding: 0;
+    box-sizing: border-box;
   }
 }
 .erreur-content {

@@ -21,11 +21,13 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    margin: 0;
+    max-width: 1440px;
+    margin: auto;
     padding: 0;
+    box-sizing: border-box;
   }
 }
 .collapse-about {
@@ -59,20 +61,22 @@ a {
 }
 .collapse-about .collapse .collapse-title .rotate {
   transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 .collapse-about .collapse .collapse-title .rotateUp {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .collapse-about .collapse .collapse-title .rotateDown {
-  transform: rotate(0);
+  transform: rotate(180deg);
 }
 
 .collapse-card {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 0 20px;
 }
 .collapse-card .collapse {
+  padding: 0 28px 0 20px;
   border-radius: 5px;
 }
 .collapse-card .collapse .collapse-content {
@@ -98,12 +102,14 @@ a {
 }
 .collapse-card .collapse .collapse-title .rotate {
   transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 .collapse-card .collapse .collapse-title .rotateUp {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .collapse-card .collapse .collapse-title .rotateDown {
-  transform: rotate(0);
+  transform: rotate(180deg);
 }
 
 @media (min-width: 768px) {
@@ -125,9 +131,8 @@ a {
     margin: 0 25px 0 25px;
     display: flex;
     flex-direction: row;
-    gap: 76px;
   }
-  .collapse-card div {
+  .collapse-card .collapse-conteneur {
     width: 100%;
   }
   .collapse-card .collapse {
@@ -157,6 +162,7 @@ a {
   }
   .collapse-card {
     margin: 0 100px 0 100px;
+    gap: 76px;
   }
   .collapse-card .collapse {
     padding: 0 0px 0 0px;

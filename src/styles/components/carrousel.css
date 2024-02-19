@@ -21,11 +21,13 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    margin: 0;
+    max-width: 1440px;
+    margin: auto;
     padding: 0;
+    box-sizing: border-box;
   }
 }
 .carrousel {
@@ -40,6 +42,7 @@ a {
   background: #FF6060;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
   position: relative;
 }
 .carrousel .arrow {
@@ -56,6 +59,15 @@ a {
 .carrousel .arrowLeft {
   left: 7%;
 }
+.carrousel p {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  visibility: hidden;
+}
 
 @media (min-width: 768px) {
   .carrousel {
@@ -68,6 +80,9 @@ a {
     width: 36px;
     height: 52px;
   }
+  .carrousel p {
+    visibility: visible;
+  }
 }
 @media (min-width: 1025px) {
   .carrousel {
@@ -76,6 +91,7 @@ a {
   }
   .carrousel img {
     height: 415px;
+    border-radius: 25px;
   }
   .carrousel .arrow {
     width: 47px;
