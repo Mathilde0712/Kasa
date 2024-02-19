@@ -1,4 +1,3 @@
-
 const Banner = ({ title, content }) => {
   return (
     <div className="banner">

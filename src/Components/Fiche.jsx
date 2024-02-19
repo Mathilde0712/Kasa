@@ -1,11 +1,16 @@
-// import { useParams } from "react-router-dom";
 import Collapse from "./Collapse";
 import Rating from "./Rating";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-const Fiches = ({title, location, tags, rating, host, description, equipments}) => {
- 
-
+const Fiches = ({
+  title,
+  location,
+  tags,
+  rating,
+  host,
+  description,
+  equipments,
+}) => {
   return (
     <div className="fiches">
       <section className="fiches-content">
@@ -32,10 +37,10 @@ const Fiches = ({title, location, tags, rating, host, description, equipments}) 
         <Collapse title="Description" content={description} />
         <Collapse
           title="Equipements"
-          content={equipments.map((equipments,index) => (
+          content={equipments.map((equipments, index) => (
             <p key={index} className="equipement-content">
               {equipments}
-            </p> 
+            </p>
           ))}
         />
       </section>
@@ -47,10 +52,10 @@ Fiches.propTypes = {
   title: PropTypes.string,
   location: PropTypes.string,
   tags: PropTypes.array,
-  rating: PropTypes.string, 
-  host: PropTypes.object, 
-  description:PropTypes.string, 
-  equipments:PropTypes.array,
-}
+  rating: PropTypes.string,
+  host: PropTypes.object,
+  description: PropTypes.string,
+  equipments: PropTypes.array,
+};
 
 export default Fiches;

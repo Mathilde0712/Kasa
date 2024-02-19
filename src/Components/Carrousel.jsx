@@ -1,41 +1,49 @@
-
-import arrowLeft from "../Assets/images/Vector_gauche.svg"
-import arrowRight from "../Assets/images/Vector_droite.svg"
+import arrowLeft from "../Assets/images/Vector_gauche.svg";
+import arrowRight from "../Assets/images/Vector_droite.svg";
 import { useState } from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-const Carrousel = ({picture}) => {
-const [index, setIndex]=useState(0)
-// s
-const nextSlide = ()=>{
-  setIndex(index + 1)
-  if (index === picture.length - 1){
-    setIndex(0)
-  }
-}
-const prevSlide = ()=>{
-  setIndex (index - 1)
-  if (index === 0){
-    setIndex(picture.length - 1)
-  }
-}
- return (
-     <div  className="carrousel">
-      <img src={picture[index]} alt={picture[index]}/>
-      {picture.length > 1 &&(
-      <div className="chevrons">
-      <img className="arrow arrowLeft" src={arrowLeft} onClick={prevSlide}/>
-      <img className="arrow arrowRight" src={arrowRight} onClick={nextSlide}/>
-      <p>{index + 1} / {picture.length }</p>
-      </div>
-      
+const Carrousel = ({ picture }) => {
+  const [index, setIndex] = useState(0);
+  // s
+  const nextSlide = () => {
+    setIndex(index + 1);
+    if (index === picture.length - 1) {
+      setIndex(0);
+    }
+  };
+  const prevSlide = () => {
+    setIndex(index - 1);
+    if (index === 0) {
+      setIndex(picture.length - 1);
+    }
+  };
+  return (
+    <div className="carrousel">
+      <img src={picture[index]} alt={picture[index]} />
+      {picture.length > 1 && (
+        <div className="chevrons">
+          <img
+            className="arrow arrowLeft"
+            src={arrowLeft}
+            onClick={prevSlide}
+          />
+          <img
+            className="arrow arrowRight"
+            src={arrowRight}
+            onClick={nextSlide}
+          />
+          <p>
+            {index + 1} / {picture.length}
+          </p>
+        </div>
       )}
     </div>
   );
- };
+};
 
-Carrousel.propTypes ={
+Carrousel.propTypes = {
   picture: PropTypes.array,
-}
+};
 
 export default Carrousel;
