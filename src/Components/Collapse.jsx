@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ArrowBack from "../Assets/images/arrow_back.svg";
+import ArrowBack from "../Assets/images/fleche.png";
 import PropTypes from "prop-types"
 
 const Collapse = ({ title, content }) => {
@@ -10,15 +10,15 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div>
+    <div className="collapse-conteneur">
       <article className="collapse">
         <div className="collapse-title">
           <h3 className="subtitle">{title}</h3>
-          <img
+          <div
             className={open ? "rotate rotateUp" : "rotate rotateDown"}
-            onClick={toggle}
-            src={ArrowBack}
-          />
+            onClick={toggle}>
+            <img src={ArrowBack} alt = "flèche"/>
+          </div>
         </div>
         {open && (
           <div>
