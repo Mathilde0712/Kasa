@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Navigation />
-      <Banner title="" content={ImageAbout} />
+      <Banner titleBanner="" contentBanner={ImageAbout} />
       <CollapseAbout />
       <Footer />
     </div>

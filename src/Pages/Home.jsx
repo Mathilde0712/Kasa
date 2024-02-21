@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Navigation />
-      <Banner title="Chez vous, partout et ailleurs" content={ImageSource} />
+      <Banner titleBanner="Chez vous, partout et ailleurs" contentBanner={ImageSource} />
       <Card />
       <Footer />
     </div>

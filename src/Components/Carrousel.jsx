@@ -4,8 +4,9 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 const Carrousel = ({ picture }) => {
+  //index = la photo actuelle 
   const [index, setIndex] = useState(0);
-  // s
+  // variable pour aller à la photo suivant ou précédente
   const nextSlide = () => {
     setIndex(index + 1);
     if (index === picture.length - 1) {

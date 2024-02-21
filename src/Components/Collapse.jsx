@@ -3,12 +3,12 @@ import ArrowBack from "../Assets/images/fleche.png";
 import PropTypes from "prop-types";
 
 const Collapse = ({ title, content }) => {
+  //état de la collapse en arrivant sur la page = fermer (false)
   const [open, setOpen] = useState(false);
-
+//changement d'état pour faire la fonction contraire d'open = passage à true
   const toggle = () => {
     setOpen(!open);
   };
-
   return (
     <div className="collapse-conteneur">
       <article className="collapse">
