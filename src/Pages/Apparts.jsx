@@ -8,6 +8,7 @@ import PageErreur from "./PageErreur";
 
 const Apparts = () => {
   const id = useParams();
+  
   const houseDatas = datas.find((houseDatas) => {
     return houseDatas.id === id.id;
   });

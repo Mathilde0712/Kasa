@@ -14,8 +14,6 @@ const App = () => {
       <Route path="/a-propos" element={<About/>}/>
       <Route path="/fiches/:id" element={<Apparts />}/>
       <Route path="*" element={<PageErreur/>}/>
-
-      
     </Routes>
     </BrowserRouter>
   );

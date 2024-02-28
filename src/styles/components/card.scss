@@ -1,83 +1,93 @@
 @import "../pages/settings";
 
 .card-content {
-    margin: 20px 20px 20px 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    grid-gap: 20px;
+  margin: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-gap: 20px;
+
+  article {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 225px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    height: 225px;
+    border-radius: 10px;
+    background: $color-1;
+    object-fit: cover;
+    position: relative;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 13%,
+      rgba(0, 212, 255, 0) 70%
+    );
+  }
+
+  .card-content-text {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    border-radius: 10px;
+  }
+
+  p {
+    position: absolute;
+    bottom: 5%;
+    color: $color-3;
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    box-sizing: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-content {
+    grid-template-columns: 1fr 1fr;
+    background-color: #f6f6f6;
+    padding: 56px 50px 50px 50px;
+    border-radius: 25px;
 
     article {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 225px;
-        cursor: pointer;
+      width: 100%;
+      height: 250px;
     }
 
     img {
-        width: 100%;
-        height: 225px;
-        border-radius: 10px;
-        background: $color-1;
-        object-fit: cover;
-        position: relative;
+      width: 100%;
+      height: 250px;
     }
 
     p {
-        height: 52px;
-        color: $color-3;
-        position: absolute;
-        padding: 0 20px 0 20px;
-        top: 70%;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 142.6%;
+      top: 75%;
     }
-}
-
-@media (min-width : 768px) {
-    .card-content {
-        grid-template-columns: 1fr 1fr;
-        background-color: #f6f6f6;
-        padding: 56px 50px 50px 50px;
-        border-radius: 25px;
-
-        article {
-            width: 100%;
-            height: 250px;
-        }
-
-        img {
-            width: 100%;
-            height: 250px;
-
-        }
-
-        p {
-            top: 75%
-        }
-    }
+  }
 }
 
 @media (min-width: 1025px) {
-    .card-content {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 43px 100px 50px 100px;
-        gap: 60px;
+  .card-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 43px 100px 50px 100px;
+    gap: 60px;
 
-
-        article {
-            width: 100%;
-            height: 340px;
-        }
-
-        img {
-            width: 100%;
-            height: 340px;
-
-        }
-
+    article {
+      width: 100%;
+      height: 340px;
     }
+
+    img {
+      width: 100%;
+      height: 340px;
+    }
+  }
 }
