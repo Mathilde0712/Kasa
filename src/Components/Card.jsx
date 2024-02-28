@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ id, cover, title }) => {
   return (
-      <article key={id}>
+      <article >
         <Link to={`/fiches/${id}`}>
           <img src={cover} alt={title} />
           <div className="card-content-text">

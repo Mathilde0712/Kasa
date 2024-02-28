@@ -1,6 +1,7 @@
 import Collapse from "./Collapse";
 import Rating from "./Rating";
 import PropTypes from "prop-types";
+import Tags from "./Tags";
 
 const Fiches = ({
   title,
@@ -18,11 +19,13 @@ const Fiches = ({
           <h2 className="fiches-title">{title}</h2>
           <h3 className="fiches-subtitle">{location}</h3>
           <div className="tags">
-            {tags.map((tag) => (
-              <p key={tag.toString()} className="tags-content">
-                {tag}
-              </p>
-            ))}
+            <Tags
+              tag={tags.map((tags, index) => (
+                <p key={index} className="tags-content">
+                  {tags}
+                </p>
+              ))}
+            />
           </div>
         </div>
         <div className="fiches-content-host">
