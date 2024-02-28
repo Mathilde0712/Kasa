@@ -1,22 +1,24 @@
-
 import { Link } from "react-router-dom";
-import datas from "../data/datas.json";
+import PropTypes from "prop-types";
+// import datas from "../data/datas.json";
 
-const Card = () => {
+const Card = ({ id, cover, title }) => {
   return (
-    <div className="card-content">
-      {datas.map((data) => (
-        <article key={data.id}>
-          <Link to={`/fiches/${data.id}`}>
-            
-            <img src={data.cover} alt={data.title} />
-            <div className="card-content-text">
-            <p className="subtitle">{data.title}</p>
-            </div>
-          </Link>
-        </article>
-      ))}
-    </div>
+      <article key={id}>
+        <Link to={`/fiches/${id}`}>
+          <img src={cover} alt={title} />
+          <div className="card-content-text">
+            <p className="subtitle">{title}</p>
+          </div>
+        </Link>
+      </article>
   );
 };
+
+Card.propTypes = {
+  title: PropTypes.string,
+  id: PropTypes.string,
+  cover: PropTypes.string,
+};
+
 export default Card;
