@@ -19,13 +19,12 @@ const Fiches = ({
           <h2 className="fiches-title">{title}</h2>
           <h3 className="fiches-subtitle">{location}</h3>
           <div className="tags">
-            <Tags
-              tag={tags.map((tags, index) => (
-                <p key={index} className="tags-content">
-                  {tags}
-                </p>
-              ))}
-            />
+            {tags?.map((tag , index)=>
+             <Tags
+             key= {index}
+             tag={tag}
+           />
+           )}
           </div>
         </div>
         <div className="fiches-content-host">

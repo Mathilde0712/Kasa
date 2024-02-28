@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 
 const Tags = ({ tag }) => {
   return (
-    <div>
-        <div className="tags-contener">
+    <div className="tags-contener">
+        <p className="tags-content">
           {tag}
-        </div>
+        </p>
     
     </div>
   );
 };
 
 Tags.propTypes = {
-  tag: PropTypes.array,
+  tag: PropTypes.node,
 };
 
 export default Tags;
